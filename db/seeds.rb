@@ -60,10 +60,9 @@ Now you can use Trix-based editors and attach images/files out of the box.
 
 Let’s build a Post model with a"
   )
-
   post1.banner_image.attach(
-    io: File.open(Rails.root.join("public/train.jpg")),
-    filename: "train.jpg"
+    io: File.open(Rails.root.join("public/train1.jpg")),
+    filename: "train1.jpg"
   )
 end
 
