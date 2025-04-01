@@ -1,7 +1,5 @@
 <div class="max-w-7xl w-full mx-auto py-24">
-    
-
-<nav class="flex" aria-label="Breadcrumb">
+<nav class="flex px-4 lg:px-0" aria-label="Breadcrumb">
   <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
     <li class="inline-flex items-center">
       <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -25,4 +23,11 @@
 <br/>
 
     <%= image_tag @post.banner_image,class:"w-full h-64 object-cover"%>
+    <h1 class="text-5xl text-gray-900 mt-3">
+        <%=@post.title%>
+    </h1>
+    <h1 class="mt-8 px-2 lg:px-0 text-xl">
+        <%=@post.body%>
+
+    </h1>
 </div>
