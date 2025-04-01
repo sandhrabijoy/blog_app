@@ -31,6 +31,9 @@ gem "solid_cable"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Friendly is used for processing of posts/id
+gem "friendly_id", "~> 5.5.0"
+
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
 gem "kamal", require: false
 
@@ -63,5 +66,3 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 4.2"
-
-gem 'friendly_id', '~> 5.5.0'
