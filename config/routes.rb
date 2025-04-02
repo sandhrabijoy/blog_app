@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resource :session
   resources :posts, only: [ :index, :show ]
   namespace :admin do
-    resources :posts, only: [:new, :create]
+    resources :posts, only: [ :new, :create ]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
