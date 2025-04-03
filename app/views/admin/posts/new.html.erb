@@ -1,0 +1,10 @@
+<div class ="max-w-7xl w-full mx-auto py-24">
+    <h1 class="text 5-xl text-gray-900 mb-8">New Blog Post</h1>
+    <%= form_with model: @post, url: admin_posts_path do |f| %>
+    <div class ="mb-4">
+        <%= f.label :title, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white"%>
+        <%= f.text_field :title, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"%>
+    </div>
+
+    <%end%>
+</div>

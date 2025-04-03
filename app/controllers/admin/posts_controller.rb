@@ -9,7 +9,7 @@ module Admin
 
   private
   def require_admin
-    if !Currrent.session.user.admin?
+    if !Current.session&.user&.admin?
       redirect_to root_path, alert: "You are not authorized to view this page"
     end
   end
