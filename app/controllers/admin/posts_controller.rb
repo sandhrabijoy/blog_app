@@ -1,7 +1,7 @@
 module Admin
   class PostsController < ApplicationController
     before_action :require_authentication, :require_admin
-    before_action :set_post[:edit, :update, :destroy]
+    before_action :set_post, only: [ :edit, :update, :destroy ]
 
     def new
       @post = Post.new
@@ -18,14 +18,24 @@ module Admin
 
     def edit
     end
+
     def update
+      if @post.update(post_params)
+        redirect_to @post, notice: "Post was successfully updated"
+      else
+        render :edit
+      end
     end
+
     def destroy
+      @post.destroy
+      redirect_to posts_path, notice: "Post was successfully deleted"
     end
 
     private
+
     def set_post
-      @post= Post.friendly.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
 
     def require_admin
