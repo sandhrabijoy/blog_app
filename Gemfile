@@ -16,6 +16,10 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+#adding sitemap
+gem "sitemap_generator"
+#adding fiddle
+gem 'fiddle'
 
 # Tail wind
 gem "tailwindcss-rails", "~> 4.2"
