@@ -33,7 +33,7 @@
   </nav>
   <br/>
 
-  <%= image_tag @post.banner_image.presence || "Default_Banner.jpg", class: "w-full h-64 object-cover" %>
+  <%= image_tag @post.banner_image.attached? ? @post.banner_image : "Default_Banner.jpg", class: "w-full h-64 object-cover" %>
 
   <h1 class="text-5xl text-gray-900 mt-3">
     <%= @post.title %>
