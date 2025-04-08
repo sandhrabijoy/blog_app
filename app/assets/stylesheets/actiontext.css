@@ -10,6 +10,10 @@ trix-editor {
   min-height: 40vh;
   outline: none; }
 
+  trix-editor h1 {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
 trix-toolbar * {
   box-sizing: border-box; }
 

@@ -1,9 +1,15 @@
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto">
     <a href="<%= url_for post %>">
         <% if post.banner_image.attached? %>
-            <img class="rounded-t-lg" src="<%= url_for(post.banner_image) %>" alt="Post Banner Image" />
+            <div class="relative w-full h-48 overflow-hidden">
+    <img class="rounded-t-lg w-full h-full object-cover" src="<%= url_for(post.banner_image) %>" alt="Post Banner Image" />
+</div>
         <% else %>
-            <img class="rounded-t-lg" src="<%= asset_path('Default_Banner.jpg') %>" alt="Default Banner Image" />
+        <div class="relative w-full h-48 md:h-60 lg:h-72 overflow-hidden">
+    <img class="rounded-t-lg w-full h-full object-cover" src="<%= asset_path('Default_Banner.jpg') %>" alt="Default Banner Image" />
+</div>
+
+            <%# <img class="rounded-t-lg h-100 md:h-60 lg:h-72 object-cover" src="<%= asset_path('Default_Banner.jpg') %>" alt="Default Banner Image" /> %>
         <% end %>
     </a>
     <div class="p-5">
