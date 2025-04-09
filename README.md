@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+*  If the changes in Tailwind CSS is not being applied in Inspect
+$ rake tailwindcss:build
+$ rake assets:precompile
+$ rake assets:clobber
+
