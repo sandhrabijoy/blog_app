@@ -7,8 +7,9 @@ trix-editor {
   border-radius: 3px;
   margin: 0;
   padding: 0.4em 0.6em;
-  min-height: 40vh;
+  min-height: 5em;
   outline: none; }
+
 
 trix-toolbar * {
   box-sizing: border-box; }
@@ -315,6 +316,10 @@ trix-editor .trix-button--remove {
 trix-editor .attachment__metadata-container {
   position: relative; }
 
+trix-editor h1 {
+  font-size: 1.2em;
+  line-height: 1.2; }
+
 trix-editor .attachment__metadata {
   position: absolute;
   left: 50%;
@@ -348,6 +353,7 @@ trix-editor .attachment__metadata {
   .trix-content h1 {
     font-size: 1.2em;
     line-height: 1.2; }
+    
   .trix-content blockquote {
     border: 0 solid #ccc;
     border-left-width: 0.3em;

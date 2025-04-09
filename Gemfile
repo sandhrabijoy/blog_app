@@ -20,6 +20,7 @@ gem "jbuilder"
 gem "sitemap_generator"
 # adding fiddle
 gem "fiddle"
+gem "trix"
 
 # Tail wind
 gem "tailwindcss-rails", "~> 4.2"
