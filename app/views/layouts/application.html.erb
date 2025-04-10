@@ -31,7 +31,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="<%="dark" if Current&.user&.dark_mode?%>">
     <%= yield %>
   </body>
 </html>

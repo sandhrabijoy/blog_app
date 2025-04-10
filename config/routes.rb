@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  resource :registrations, only: [ :new, :create ]
+  resources :passwords, param: :token
   resource :session
   resources :posts, only: [ :index, :show ]
   namespace :admin do
     resources :posts, only: [ :new, :create, :edit, :update, :destroy ]
   end
+  resources :dark_mode, only: [ :create ], controller: :dark_mode
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
