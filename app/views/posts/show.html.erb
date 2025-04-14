@@ -2,7 +2,7 @@
   <%= @post.title %>
 <% end %>
 
-<div class="max-w-7xl w-full mx-auto py-24 dark:bg-gray-700">
+<div class="w-full mx-auto py-24 dark:bg-gray-700 dark:text-white">
   <% if Current.session&.user&.admin? %>
     <div class="flex mx-auto mb-8">
       <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300 mb-auto">You are Admin</span>
@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <nav class="flex px-4 lg:px-0" aria-label="Breadcrumb">
+  <nav class="flex px-4 lg:px-0 " aria-label="Breadcrumb">
     <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
       <li class="inline-flex items-center">
         <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -35,7 +35,7 @@
 
   <%= image_tag @post.banner_image.attached? ? @post.banner_image : "Default_Banner.jpg", class: "w-full h-64 object-cover" %>
 
-  <h1 class="text-5xl text-gray-900 mt-3">
+  <h1 class="text-5xl text-gray-900 mt-3 dark:bg-gray-700 dark:text-white">
     <%= @post.title %>
   </h1>
 

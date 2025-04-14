@@ -467,3 +467,6 @@ trix-editor .attachment__metadata {
   padding: 0 !important;
   max-width: 100% !important;
 }
+.dark .trix-content {
+  @apply bg-gray-700 text-white;
+}
