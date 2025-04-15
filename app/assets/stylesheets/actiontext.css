@@ -467,9 +467,6 @@ trix-editor .attachment__metadata {
   padding: 0 !important;
   max-width: 100% !important;
 }
-.dark .trix-content {
-  @apply bg-gray-700 text-white;
-}
 body.dark {
   background-color: #111827; 
   color: #f9fafb;
@@ -479,7 +476,3 @@ body.dark a {
   color: #93c5fd; 
 }
 
-body.dark .trix-content {
-  background-color: #1f2937;
-  color: #e5e7eb;
-}
